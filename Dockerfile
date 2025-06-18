@@ -21,7 +21,7 @@ FROM scratch
 COPY --from=builder /app/bible-server /bible-server
 COPY --from=builder /app/templates /templates
 COPY --from=builder /app/static /static
-COPY --from=builder /app/bible.db /bible.db
+COPY --from=builder /app/bible/ARC.sqlite /bible/ARC.sqlite
 
 # Expose the port the app runs on
 EXPOSE 8080
