@@ -1,0 +1,6 @@
+# Binaries
+bible-server
+
+# Build directories
+/build
+/bin

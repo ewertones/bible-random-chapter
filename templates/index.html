@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bíblia - Que tal um capítulo?</title>
+        <link rel="stylesheet" href="/static/style.css" />
+    </head>
+    <body>
+        <div class="container">
+            {{if .}}
+            <h2>{{(index . 0).Book}} {{(index . 0).Chapter}}</h2>
+            <div class="verses">
+                {{range .}}
+                <p><span class="verse-number">{{.Verse}}</span> {{.Text}}</p>
+                {{end}}
+            </div>
+            {{else}}
+            <p>No verses found.</p>
+            {{end}}
+        </div>
+    </body>
+</html>
