@@ -1,12 +1,12 @@
 package main
 
 import (
-    "database/sql"
-    "html/template"
-    "log"
-    "net/http"
+	"database/sql"
+	"html/template"
+	"log"
+	"net/http"
 
-    _ "github.com/mattn/go-sqlite3"
+	_ "github.com/mattn/go-sqlite3"
 )
 
 type Verse struct {
